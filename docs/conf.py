@@ -63,4 +63,4 @@ nitpicky = True
 
 latex_docclass = {"howto": "article", "manual": "article"}
 
-numfig_format = {"container": "Cont. %s"}
+numfig_format = {"container": "Cont. %s", 'original': 'Original %s'}
