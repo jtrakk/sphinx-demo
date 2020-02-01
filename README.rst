@@ -16,6 +16,8 @@ Gives this message:   ::
 
 Examine the files in ``dist/docs/index.html``.
 
+.. image:: docs/screenshot1.png
+
 
 The behavior I want is for the referenced text to be hyperlinked "Cont. 1" instead of the
 monospace without link.
