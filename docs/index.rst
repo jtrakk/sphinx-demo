@@ -1,45 +1,4 @@
 
-First section
-=============
-
-.. _first_figure:
-
-.. figure:: rimg.png
-
-   First figure
-
-.. _first_my_figure:
-
-.. my-figure:: rimg.png
-
-   First my figure
-
-.. _first_numbered_text:
-
-.. numbered-text:: Hello world
-
-.. _second_numbered_text:
-
-.. numbered-text:: Hello Sphinx
-
-Second section
-==============
-
-.. _second_my_figure:
-
-.. my-figure:: rimg.png
-
-   Second my figure
-
-Reference section
-=================
-
-* first_figure is :numref:`first_figure`
-* first_my_figure is :numref:`first_my_figure`
-* second_my_figure is :numref:`second_my_figure`
-* first numbered_text is :numref:`first_numbered_text`
-* second numbered_text is :numref:`second_numbered_text`
-
 
 Bar
 -----
@@ -54,7 +13,7 @@ Let's reference :numref:`other_table` .
 
 Let's reference :numref:`mycontainer` .
 
-Let's reference :numref:`other_container` .
+Let's reference :numref:`othercontainer` .
 
 
 
@@ -89,16 +48,6 @@ Cras eu facilisis ante, in tincidunt erat. Aliquam commodo lectus mauris, sodale
     | 4       |  5      |  6        |
     +---------+---------+-----------+
 
-Cras eu facilisis ante, in tincidunt erat. Aliquam commodo lectus mauris, sodales scelerisque purus hendrerit placerat. Phasellus libero dui, laoreet vel vehicula eu, vestibulum et erat. Sed laoreet vehicula metus nec volutpat. Vivamus id elit tellus. Phasellus nec ex tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum rutrum non lorem non tincidunt. Maecenas rhoncus neque in turpis iaculis, id imperdiet ex scelerisque. Proin sit amet iaculis nisl. Phasellus vel justo est. Nunc in vestibulum erat. Donec sit amet imperdiet mauris. Nullam pellentesque arcu lacus, vitae lobortis lectus vulputate nec.
-
-
-.. _mycontainer:
-
-.. numbered-container::
-
-
-     spam eggs
-
 
 
 Nam metus lorem, finibus ac elit tempus, feugiat scelerisque elit. Nulla molestie in magna ut consequat. Nullam ut nisl imperdiet, sollicitudin diam nec, finibus enim. Aenean et nunc sed velit bibendum feugiat at quis dui. Suspendisse placerat velit ut massa congue, vitae maximus erat scelerisque. Fusce at elementum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis, leo at dapibus blandit, diam lorem pellentesque odio, a ultricies tellus elit eu leo. Etiam id fringilla dolor, mollis dapibus mauris. Sed bibendum turpis vitae mauris hendrerit, sit amet elementum urna fermentum. Vivamus ac enim auctor odio ornare faucibus. Duis posuere ligula nec posuere tempor.
@@ -106,9 +55,21 @@ Nam metus lorem, finibus ac elit tempus, feugiat scelerisque elit. Nulla molesti
 
 
 .. numbered-container::
-    :name: other_container
+    :name: mycontainer
 
      foo bar
+
+
+Cras eu facilisis ante, in tincidunt erat. Aliquam commodo lectus mauris, sodales scelerisque purus hendrerit placerat. Phasellus libero dui, laoreet vel vehicula eu, vestibulum et erat. Sed laoreet vehicula metus nec volutpat. Vivamus id elit tellus. Phasellus nec ex tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum rutrum non lorem non tincidunt. Maecenas rhoncus neque in turpis iaculis, id imperdiet ex scelerisque. Proin sit amet iaculis nisl. Phasellus vel justo est. Nunc in vestibulum erat. Donec sit amet imperdiet mauris. Nullam pellentesque arcu lacus, vitae lobortis lectus vulputate nec.
+
+
+.. _othercontainer:
+
+.. numbered-container::
+
+
+     spam eggs
+
 
 
 
