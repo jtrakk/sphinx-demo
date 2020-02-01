@@ -21,3 +21,8 @@ Examine the files in ``dist/docs/index.html``.
 
 The behavior I want is for the referenced text to be hyperlinked "Cont. 1" instead of the
 monospace without link.
+
+Also, at the actual container, the container number should appear instead of just the
+content.
+
+.. image:: docs/screenshot2.png
