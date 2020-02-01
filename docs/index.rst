@@ -53,7 +53,7 @@ Cras eu facilisis ante, in tincidunt erat. Aliquam commodo lectus mauris, sodale
 
 .. _mycontainer:
 
-.. container::
+.. numbered-container::
 
 
      spam eggs
@@ -64,7 +64,7 @@ Nam metus lorem, finibus ac elit tempus, feugiat scelerisque elit. Nulla molesti
 
 
 
-.. container::
+.. numbered-container::
     :name: other_container
 
      foo bar
