@@ -11,9 +11,9 @@ Let's reference :numref:`mytable` .
 
 Let's reference :numref:`other_table` .
 
-Let's reference :numref:`mycontainer` .
+Let's reference :numref:`myobject` .
 
-Let's reference :numref:`othercontainer` .
+Let's reference :numref:`otherobject` .
 
 
 
@@ -54,8 +54,8 @@ Nam metus lorem, finibus ac elit tempus, feugiat scelerisque elit. Nulla molesti
 
 
 
-.. numbered-container::
-    :name: mycontainer
+.. numbered-object::
+    :name: myobject
 
      foo bar
 
@@ -63,9 +63,9 @@ Nam metus lorem, finibus ac elit tempus, feugiat scelerisque elit. Nulla molesti
 Cras eu facilisis ante, in tincidunt erat. Aliquam commodo lectus mauris, sodales scelerisque purus hendrerit placerat. Phasellus libero dui, laoreet vel vehicula eu, vestibulum et erat. Sed laoreet vehicula metus nec volutpat. Vivamus id elit tellus. Phasellus nec ex tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum rutrum non lorem non tincidunt. Maecenas rhoncus neque in turpis iaculis, id imperdiet ex scelerisque. Proin sit amet iaculis nisl. Phasellus vel justo est. Nunc in vestibulum erat. Donec sit amet imperdiet mauris. Nullam pellentesque arcu lacus, vitae lobortis lectus vulputate nec.
 
 
-.. _othercontainer:
+.. _otherobject:
 
-.. numbered-container::
+.. numbered-object::
 
 
      spam eggs
