@@ -35,7 +35,7 @@ class MyElement(Directive):
 
         element_node += nodes.caption(text="".join(self.content))
 
-        self.state.document.note_implicit_target(element_node)
+        self.state.document.note_explicit_target(element_node)
 
         return [element_node]
 
