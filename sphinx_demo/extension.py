@@ -41,11 +41,11 @@ class MyElement(Directive):
 
 
 def setup(app: sphinx.application.Sphinx):
-    # my-container
+
     app.add_enumerable_node(
         my_element,
         "container",
-        lambda node: node["names"][0],
+        lambda node: node[0].astext(),
         html=(visit_my_element, depart_my_element),
     )
     app.add_directive("numbered-object", MyElement)
