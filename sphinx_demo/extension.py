@@ -11,7 +11,6 @@ class my_element(nodes.Element):
 
 
 def visit_my_element(self, node):
-
     self.visit_container(node)
 
 
@@ -20,7 +19,10 @@ def depart_my_element(self, node):
 
 
 class MyElement(Directive):
-    option_spec = {"name": docutils.parsers.rst.directives.unchanged}
+    option_spec = {
+        "name": docutils.parsers.rst.directives.unchanged,
+        "caption": docutils.parsers.rst.directives.unchanged,
+    }
 
     has_content = True
 
@@ -28,14 +30,17 @@ class MyElement(Directive):
         element_node = my_element()
 
         name = self.options.get("name")
+        print(self.options)
         if name is None:
             # TODO Somehow get the name off the surrounding label?
             name = str(uuid.uuid4())
         element_node["names"] = [name]
 
-        element_node += nodes.caption(text="".join(self.content))
+        if self.options.get("caption"):
+            element_node += nodes.caption(text=self.options["caption"])
 
         self.state.document.note_explicit_target(element_node)
+        self.state.nested_parse(self.content, self.content_offset, element_node)
 
         return [element_node]
 
